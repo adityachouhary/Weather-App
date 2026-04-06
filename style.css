@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(http://127.0.0.1:3000/Weather-App/img/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.input-output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.405);
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.input-output h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.input-container input{
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-left: .75rem;
+    background-color: rgba(250, 247, 247, 0);
+    border-radius: .7rem;
+}
+.input-container button{
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: .60rem;
+    background-color: rgba(250, 247, 247, 0);
+    cursor: pointer;
+    border-radius: .7rem;
+}
+.input-container button:hover{
+    color: white;
+    background-color: rgba(222, 114, 114, 0.587);
+}
+#weather-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: #FF5722;
+    margin-top: 20px;
+}
+@media screen and (min-width :20px) and (max-width :480px) {
+    .input-output{
+        width: 90%;
+        height: 85%;
+        padding: 2rem;
+    }
+    .input-output h1{
+        font-size: 2rem;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input-container input{
+    font-size: 1.2rem;
+    height: 2rem;
+    padding-left: .5rem;
+    background-color: rgba(250, 247, 247, 0);
+}
+.input-container button{
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: .3rem;
+}
+}
+@media screen and (min-width : 481px) and (max-width :768px) {
+        .input-output{
+        width: 90%;
+        height: 85%;
+        padding: 3rem;
+    }
+    .input-output h1{
+        font-size: 2.5rem;
+    }
+    .input-container{
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input-container input{
+    font-size: 1.5rem;
+    height: 2.5rem;
+    padding-left: .7rem;
+    background-color: rgba(250, 247, 247, 0);
+}
+.input-container button{
+    font-size: 1.5rem;
+    height: 2.5rem;
+    padding: .4rem;
+}
+}
+@media screen and (min-width :769px) and (max-width :1300px) {
+    .input-output{
+        width: 90%;
+        height: 85%;
+        padding: 3rem;
+    }
+    .input-output h1{
+        font-size: 2.8rem;
+    }
+}
